@@ -27,12 +27,7 @@
 	function print_title($title) {
 		echo '<h2 class="title">'.$title.'</h2>';
 	}
-
+	// Enable Theme Features such as Sidebars, Navigation Menus, Post Thumbnails, Post Formats, Custom Headers, Custom Backgrounds and others	
+	// Define functions used in several template files of your theme
+	// Set up an options menu, giving site owners options for colors, styles, and other aspects of your theme
 ?>
-
-
-<!-- Enable Theme Features such as Sidebars, Navigation Menus, Post Thumbnails, Post Formats, Custom Headers, Custom Backgrounds and others -->
-
-<!-- Define functions used in several template files of your theme --> 
-
-<!-- Set up an options menu, giving site owners options for colors, styles, and other aspects of your theme -->
