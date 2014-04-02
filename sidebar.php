@@ -1,36 +1,9 @@
-	<div id="sidebar">
-
-		<div id="about">
-
-			<?php print_title(""); ?>  
-			<p>
-
-				<?php
-					$id = 72; // id der "über mich" seite
-					$post = get_post($id); 
-					$content = apply_filters('the_content', $post->post_content); 
-					echo $content;
-				?>
-
-			</p>
-
+<div id="sidebar">
+	<h2>LEA<br>HAMPEL</h2>
+	<div class="contact">	
+		<a class="mail" href="mailto:lea@leahampel.de">Lea@leahampel.de</a>
+		<p class="phone">0176 631 52 428</p>					
+		<a class="facebook" href="http://facebook.com/lea.hampel">Facebook</a><br>
+		<a class="twitter" href="https://twitter.com/leahampel">Twitter</a>
 	</div>
-		
-	<!-- <div id="archiv">
-
-		<h2>Archiv</h2>
-
-			<?php // wp_nav_menu(array("theme_location" => "example")); ?>
-
-		</div> --> 
-
-
-		<!-- <div id="bookmarks" class="list">
-
-			<?php wp_list_bookmarks(); ?>
-
-		</div> -->
-
-		<!-- Suche --> 
-
-	</div> 
+</div>

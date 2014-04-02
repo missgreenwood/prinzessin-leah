@@ -11,9 +11,9 @@
 	// http://codex.wordpress.org/Function_Reference/register_nav_menu
 	register_nav_menu( 'primary', 'Hauptnavigation' );
 	register_nav_menu( 'footer', 'Footernavigation' );
-	register_nav_menu( 'example', 'Beispielnavigation' );
 	// => http://localhost/kunden/frauhampel/website/wp-admin/nav-menus.php?action=locations
 
+	register_sidebar();
 
 	/*
 		WP INIT HOOKS

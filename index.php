@@ -1,5 +1,4 @@
 	<!-- include header.php -->
-
 	<?php get_header(); ?>
 
 	<div id="main">
@@ -11,10 +10,12 @@
 			<!-- link article title to article -->
 			
 			<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-			
-			<div><?php the_post_thumbnail(); ?></div>
-
 			<div class="entry">
+				<?php 
+				if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+			  		the_post_thumbnail();
+					} 
+				?>
 				<?php the_content(); ?>
 			</div>
 
@@ -23,8 +24,6 @@
 	<?php endif; ?>
 
 	</div><!-- main -->
-
-	<?php get_sidebar(); ?>
-
-	<?php get_footer(); ?>
 	
+	<?php get_sidebar(); ?>
+	<?php get_footer(); ?>
