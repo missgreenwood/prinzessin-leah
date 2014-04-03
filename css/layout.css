@@ -1,0 +1,283 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+
+	font-size: 10px;
+	margin-top: 52px;
+	clear: both;
+}
+
+#website {
+
+	max-width: 1380px;
+	margin: 0 40px;
+}
+
+#header {
+
+	position: relative;
+	float: left;
+	clear: both;
+	padding-bottom: 40px;
+}
+
+	#menu-hauptlinks li {
+
+		float: left;
+	}
+
+	#menu-hauptlinks ul {
+
+		position: absolute;
+		top: 30px;
+	}
+
+#content {
+
+	float: right;
+	margin-left: 20px;
+}
+
+#footer {
+
+	height: 150px;
+	clear: both;
+	overflow: hidden;
+}
+
+#footer .page {
+
+	max-width: 1380px;
+	height: 100px;
+	padding: 12px 20px;
+	margin-right: 40px;
+}
+
+#footer .content {
+
+	float: right;
+	width: 905px;
+}
+
+/* BASIC COLUMN SETUP */
+
+#leahampel {
+
+	width: 200px;
+	position: absolute;
+	top: 52px;
+}
+
+
+
+div.columns-wrapper {
+
+	width:				100%;
+	float:				left;
+}
+
+div.columns div.left {
+
+	/*margin-right:		20px;*/
+	float:				left;
+}
+
+ div.columns div.right {
+
+	float:				right;
+}
+
+#content,
+div.columns {
+
+	width:				925px;
+	clear:				both;
+	overflow: 			hidden;
+}
+
+div.columns div.left,
+#column-main div.columns {
+
+	width: 				610px;
+}
+
+div.columns div.right,
+#column-main div.column {
+
+	width: 				295px;
+}
+
+	/* ADJUST COLUMNS BY WIDTH */
+
+	/*
+		Disable columns, if enough space for full side column
+		+ lea 200 + margin 20 + content margin 20
+	 */
+	@media only screen and (min-width: 1256px) {
+
+		#column-side div {
+
+			float: none;
+			width: auto;
+		}
+	}
+
+	/*
+	 	first break point < 925px
+	 	- set right column into main
+	 	- max margin to lea 250px
+	 */
+	@media only screen and (max-width: 1255px) {
+
+		#website,
+		#footer .page {
+
+			max-width: 1060px;
+		}
+
+		#footer .content {
+			width: 590px;
+		}
+
+		#content,
+		div.columns-wrapper {
+
+			width: 610px;
+		}
+
+		#column-side {
+
+			width: 100%;
+		}
+
+		/* adjust left column to default left column */
+		#column-side div.column.left {
+
+			width: 295px;
+		}
+	}
+
+	/*
+		second breakpoint < 890px (lea 200 + content 610 + 40px website margin + 40px inner margin)
+		- content single column
+		- scales with viewport
+	 */
+	@media only screen and (min-width: 764px) and (max-width: 940px) {
+
+		#content {
+			padding-left: 250px;
+		}
+
+		#content,
+		div.columns-wrapper,
+		div.columns,
+		div.column {
+
+			box-sizing: border-box;
+			width: 100% !important;
+		}
+
+		#column-main div.columns-wrapper div.left {
+
+			margin-bottom: 26px;
+		}
+
+		div.column {
+
+			float: none;
+		}
+
+		#footer .content {
+
+			float: none;
+			width: 100%;
+			box-sizing: border-box;
+			padding-left: 270px;
+		}
+	}
+
+	/*
+		third breakpoint < 760px
+		- scale content to full width
+		- enough space for two column layout
+		- center content
+		- float lea to bottom
+	*/
+	@media only screen and (max-width: 763px) {
+
+		#website {
+			max-width: none;
+		}
+
+		#leahampel {
+
+			position: relative;
+			top: 0;
+			margin: 50px auto;
+			float: none;
+		}
+
+		#content {
+
+			float: none;
+			margin: 0 auto;
+		}
+
+		#content,
+		div.columns-wrapper,
+		div.columns,
+		div.column {
+
+			width: 610px;
+		}
+
+		#column-side {
+
+			width: 100%;
+		}
+
+		/* adjust left column to default left column */
+		#column-side div.column.left {
+
+			width: 295px;
+		}
+
+		#footer .content {
+
+			float: none;
+			max-width: 610px;
+			margin: 0 auto;
+		}
+	}
+
+	/*
+		last breakpoint < 650px
+		(40px website margin + 610px columns)
+		- single column layout
+		- lea to bottom
+	 */
+	@media only screen and (max-width: 650px) {
+
+		#content,
+		div.columns-wrapper,
+		div.columns,
+		div.column {
+
+			width: 100% !important;
+		}
+
+		div.column {
+
+			float: none;
+		}
+
+		#footer .content {
+
+			width: 100%;
+		}
+	}
+
+/* EO COLUMN SETUP */

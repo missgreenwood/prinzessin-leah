@@ -13,8 +13,14 @@
 
 		<title><?php wp_title(' - ' , true, 'right'); ?> <?php bloginfo('name'); ?></title>
 
-		<!-- link to style.css -->
-		<link rel="stylesheet" href=<?php bloginfo('stylesheet_url'); ?> type="text/css" media="screen" />
+		<!-- use this to trigger media queries on apply devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- link to styles -->
+		<!-- <link rel="stylesheet" href=<?php bloginfo('stylesheet_url'); ?> type="text/css" media="screen" /> -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+		<link href="<?php echo get_template_directory_uri(); ?>/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="<?php echo get_template_directory_uri(); ?>/css/styling.css" rel="stylesheet" type="text/css" />
 
 		<!-- set pingback link for sites quoting this site -->
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" /> 
@@ -26,10 +32,12 @@
 
 	<body>
 
-		<div id="wrapper">
+		<div id="website">
 
-			<div id="header">
+			<div id="content">
+
+				<div id="header">
 			
-				<?php wp_nav_menu( array("theme_location" => "primary") ); ?> 
+					<?php wp_nav_menu( array("theme_location" => "primary") ); ?> 
 
-			</div><!-- header -->
+				</div><!-- header -->

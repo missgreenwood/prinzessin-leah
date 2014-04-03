@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-   <div id="main">
+   <div id="articles" class="columns"><div class="columns-wrapper">
  
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
          <h3><?php the_title(); ?></a></h3>
@@ -14,6 +14,13 @@
          </div>
       <?php endwhile; endif; ?>
  
-   </div><!-- main -->
+   </div></div>
  
-<?php get_footer(); ?>  
+      </div><!-- content -->
+   
+      <?php get_sidebar(); ?>
+
+   </div><!-- website -->
+
+   <!-- include footer.php -->
+   <?php get_footer(); ?>
