@@ -1,12 +1,14 @@
 <div id="leahampel">
 
-	<?php // <img src="assets/img/leahampel.jpg" /> ?>
+	<img src="<?php echo get_template_directory_uri(); ?>/assets/img/leahampel.jpg"/> 
 	<em class="author">Lea Hampel</em>
+	<em class="profession">Journalistin</em><br>
+
 
 	<div class="contact">
-		<a class="mail" href="mailto:lea@leahampel.de">Lea@leahampel.de</a>
+		<a class="mail" href="mailto:lea@leahampel.de">info@leahampel.de</a>
 		<p class="phone">0176 631 52 428</p>
-		<a class="facebook" href="http://facebook.com/lea.hampel">Facebook</a><br>
+		<a class="facebook" href="http://facebook.com/lea.hampel">Facebook</a>
 		<a class="twitter" href="https://twitter.com/leahampel">Twitter</a>
 	</div>
 
