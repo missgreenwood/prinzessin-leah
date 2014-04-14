@@ -64,15 +64,21 @@ div.column .more-link,
 	background: #000;
 }
 
-#menu-hauptlinks li li:hover:before {
-	position: static;
-	background: transparent;
-	margin-left: 0;
+#menu-hauptlinks li li:hover:before,
+#menu-hauptlinks li li.current-menu-parent:before {
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	top: 11px;
+	margin-left: -9px;
+	border-radius: 1em;
+	background: #000;
 }
 
-#menu-hauptlinks li li:hover {
+/* #menu-hauptlinks li li:hover {
 	text-decoration: underline;
-}
+} */
 
 #menu-hauptlinks li li {
 	margin-right: 24px;
@@ -94,10 +100,9 @@ div.column .more-link,
 	text-decoration: none;
 }
 
-#menu-hauptlinks li li.current-menu-item a {
-
+/* #menu-hauptlinks li li.current-menu-item a {
 	text-decoration: underline !important;
-}
+} */ 
 
 @media only screen and (min-width: 764px) and (max-width: 940px) {
 
@@ -289,6 +294,16 @@ div.column em {
 	line-height: 48px;
 }
 
+#leahampel .profession {
+
+	display: block;
+	/* margin: 18px 0; */
+	text-transform: uppercase;
+	font-style: normal;
+	font-size: 26px;
+	line-height: 32px;
+}
+
 #leahampel .contact * {
 
 	display: block;
@@ -320,6 +335,7 @@ div.column em {
 #footer {
 
 	background: #84A4A5;
+	width: 100%;
 }
 
 #footer * {
@@ -330,11 +346,18 @@ div.column em {
 }
 
 #footer .imprint {
-	float: left;
+	/* float: left; */
+	/* margin-left:300px;*/
+}
+
+#footer img {
+	margin-right: 10px;
+	margin-bottom: -5px;
 }
 
 #footer .followme {
 	float: right;
+	background: url(assets/img/twitter.gif) no-repeat left 1px;	
 }
 
 #footer .followme a {

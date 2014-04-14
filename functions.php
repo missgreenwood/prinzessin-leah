@@ -7,7 +7,7 @@
 	// add main thumbnail support for posts
 	add_theme_support( 'post-thumbnails' );
 
-	// add menue
+	// add menu
 	// http://codex.wordpress.org/Function_Reference/register_nav_menu
 	register_nav_menu( 'primary', 'Hauptnavigation' );
 	register_nav_menu( 'footer', 'Footernavigation' );

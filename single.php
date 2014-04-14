@@ -8,8 +8,14 @@
 			
 			<div id="articles" class="columns"><div class="columns-wrapper">
 			
-				<h1><?php the_title(); ?></h1>
-
+				<h1><?php the_title(); ?></h1><br>
+				<?php 
+				if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+					the_post_thumbnail('medium');
+					} 
+				?>
+				<br>
+				<br>
 				<?php
 					
 					// Was zum Teufel: the_content();

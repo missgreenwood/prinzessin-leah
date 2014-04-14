@@ -4,8 +4,8 @@
 		"selected_items":
 		[
 			[
-				"text-",
-				"text-decoration"
+				"a",
+				"a	Tag"
 			],
 			[
 				"FILE_RE",
@@ -44,10 +44,10 @@
 	"buffers":
 	[
 		{
-			"file": "header.php",
+			"file": "/Users/judith/Documents/Dropbox/JudithSascha/LeaHampel/TODO.txt",
 			"settings":
 			{
-				"buffer_size": 1126,
+				"buffer_size": 1695,
 				"line_ending": "Unix"
 			}
 		},
@@ -55,7 +55,31 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 518,
+				"buffer_size": 3094,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "archives.php",
+			"settings":
+			{
+				"buffer_size": 3234,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/styling.css",
+			"settings":
+			{
+				"buffer_size": 5339,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/layout.css",
+			"settings":
+			{
+				"buffer_size": 3508,
 				"line_ending": "Unix"
 			}
 		},
@@ -63,7 +87,7 @@
 			"file": "sidebar.php",
 			"settings":
 			{
-				"buffer_size": 522,
+				"buffer_size": 451,
 				"line_ending": "Unix"
 			}
 		}
@@ -71,13 +95,9 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 375.0,
+		"height": 47.0,
 		"selected_items":
 		[
-			[
-				"install",
-				"Package Control: Install Package"
-			],
 			[
 				"insta",
 				"Package Control: Install Package"
@@ -91,7 +111,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 435.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -113,40 +133,52 @@
 	},
 	"file_history":
 	[
-		"/Users/judith/Documents/LeaHampel/archive.php",
-		"/Users/judith/Documents/LeaHampel/TODO.txt",
-		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/style.css",
-		"/Users/judith/.bash_profile",
-		"/Users/judith/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
-		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/t.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/sidebar.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/functions.php",
-		"/Users/judith/Documents/LeaHampel/FRAGEN.txt",
-		"/private/etc/php.ini",
-		"/Users/judith/go-pear.phar",
-		"/Users/judith/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
-		"/Users/judith/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/judith/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/judith/Library/Application Support/Sublime Text 3/Packages/EasyMotion/EasyMotion.sublime-settings",
-		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/home.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/prinzessin-leah.sublime-project",
-		"/Users/judith/Documents/Dropbox/judithsascha/sublime/FRAGEN.txt",
-		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/page.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/footer.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/404.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/search.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/archive.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/sexyfem/footer.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/twentyfourteen/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/functions.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/footer.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/sidebar.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/archives.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/single.php",
+		"/Users/judith/Documents/Dropbox/JudithSascha/LeaHampel/prinzessin-leah/css/styling.css",
+		"/Users/judith/Documents/Dropbox/JudithSascha/LeaHampel/archive.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/xampp/.htaccess",
+		"/Users/judith/Documents/Dropbox/JudithSascha/LeaHampel/prinzessin-leah/archives.php",
+		"/private/var/folders/jc/p7qh78k50b385jcwdhtv6n7w0000gn/T/fz3temp-1/archive.php",
+		"/private/var/folders/jc/p7qh78k50b385jcwdhtv6n7w0000gn/T/fz3temp-1/archives.php",
+		"/Users/judith/Documents/Dropbox/JudithSascha/LeaHampel/prinzessin-leah/archive.php",
+		"/private/var/folders/jc/p7qh78k50b385jcwdhtv6n7w0000gn/T/fz3temp-1/index 2.php",
+		"/private/var/folders/jc/p7qh78k50b385jcwdhtv6n7w0000gn/T/fz3temp-1/archive 2.php",
+		"/private/var/folders/jc/p7qh78k50b385jcwdhtv6n7w0000gn/T/fz3temp-1/index.php",
+		"/Users/judith/Documents/Dropbox/JudithSascha/LeaHampel/Archiv/.DS_Store",
+		"/Users/judith/Documents/Dropbox/JudithSascha/LeaHampel/lea140403.txt",
+		"/Users/judith/Documents/Dropbox/JudithSascha/LeaHampel/prinzessin-leah_backup140402/index.php",
+		"/Users/judith/Documents/Dropbox/JudithSascha/LeaHampel/prinzessin-leah_backup140402/README.md",
+		"/Users/judith/Documents/Dropbox/JudithSascha/LeaHampel/prinzessin-leah_backup140402/style.css",
+		"/Users/judith/Documents/Dropbox/JudithSascha/LeaHampel/FRAGEN.txt",
+		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/header.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/page.php",
+		"/private/var/folders/jc/p7qh78k50b385jcwdhtv6n7w0000gn/T/fz3temp-1/style.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/404.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/page-templates/links.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/links.php",
+		"/private/var/folders/jc/p7qh78k50b385jcwdhtv6n7w0000gn/T/fz3temp-1/links.php",
+		"/private/var/folders/jc/p7qh78k50b385jcwdhtv6n7w0000gn/T/fz3temp-1/page.php",
+		"/private/var/folders/jc/p7qh78k50b385jcwdhtv6n7w0000gn/T/fz3temp-1/blogroll_page.php",
+		"/private/var/folders/jc/p7qh78k50b385jcwdhtv6n7w0000gn/T/fz3temp-1/functions.php",
+		"/Users/judith/Documents/Dropbox/JudithSascha/LeaHampel/htmltemplate/iteration01/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/.htaccess.php",
+		"/Users/judith/Downloads/wordpress/wp-config-sample.php",
+		"/Users/judith/Documents/LeaHampel/struktur.txt",
+		"/Users/judith/Documents/LeaHampel/vorgehensmodell.txt",
 		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/twentyfourteen/style.css",
-		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/sexyfem/index.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/twentyfourteen/css/editor-style.css",
-		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/twentythirteen/style.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/index.php",
 		"/Users/judith/Documents/Dropbox/JudithSascha/LeaHampel/vorgehensmodell.txt",
 		"/Users/judith/Documents/404Fehlerreduktion/FinalVersion/results/modify.py",
 		"/Users/judith/Documents/404Fehlerreduktion/FinalVersion/src/csv_scheme.py",
 		"/Users/judith/Documents/Job/MuenchenDe/404Fehlerreduktion/FinalVersion/sources/www.muenchen.de-2013-12.csv",
+		"/Users/judith/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/judith/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/judith/Documents/Job/MuenchenDe/Version3/csv_extract.py",
 		"/Users/judith/Documents/Job/MuenchenDe/Version3/xen_eval_source.py",
 		"/Users/judith/Documents/Job/MuenchenDe/Version3/Sources/csv_parsed1.csv",
@@ -169,6 +201,7 @@
 		"/Users/judith/Documents/Dropbox/Job/MuenchenDe/404Fehlerreduktion/Version2/eval_xen.py",
 		"/Applications/Sublime Text.app/Contents/MacOS/changelog.txt",
 		"/Users/judith/Library/Application Support/Sublime Text 3/Packages/EasyMotion/Default (OSX).sublime-keymap",
+		"/Users/judith/Library/Application Support/Sublime Text 3/Packages/EasyMotion/EasyMotion.sublime-settings",
 		"/Users/judith/Documents/Dropbox/Bachelor-Arbeit/todo051213.txt",
 		"/Users/judith/Library/Application Support/Sublime Text 3/Packages/sublemacspro/Default.sublime-keymap"
 	],
@@ -181,7 +214,7 @@
 		"height": 95.0,
 		"where_history":
 		[
-			"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah",
+			"/Users/judith/Documents/Dropbox/JudithSascha/LeaHampel/htmltemplate/iteration01",
 			"/Users/judith/Documents/404Fehlerreduktion/FinalVersion/src",
 			"/Users/judith/Documents/Job/MuenchenDe/404Fehlerreduktion/FinalVersion/",
 			"/Users/judith/Documents/Job/MuenchenDe/404Fehlerreduktion/FinalVersion/src"
@@ -192,15 +225,30 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"register_nav_menu",
-			"include_path",
-			"indent",
-			"tab",
-			"\n	",
-			"SHIFT",
-			"impressum ",
-			"\\|",
-			"header",
+			"footer",
+			"wrapper",
+			"main",
+			"wrapper",
+			"footer",
+			"leahampel",
+			"sidebar",
+			"float",
+			"profession",
+			"margin-left",
+			"wp_nav",
+			"list-style",
+			"text-decoration",
+			"hover",
+			"underline",
+			"current-menu-item",
+			"hover",
+			"teaser",
+			"profession",
+			"author",
+			"endwhile",
+			"the_content",
+			"iherer",
+			"localhost",
 			"wwww.muenchen.de-2013-12",
 			"SOURCE_FILE",
 			"www.muenchen.de-2013-11.csv",
@@ -221,7 +269,7 @@
 			"aufteilen",
 			"Ergebnisse"
 		],
-		"highlight": true,
+		"highlight": false,
 		"in_selection": false,
 		"preserve_case": false,
 		"regex": true,
@@ -240,29 +288,120 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "header.php",
+					"file": "/Users/judith/Documents/Dropbox/JudithSascha/LeaHampel/TODO.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1126,
+						"buffer_size": 1695,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								57,
-								57
+								978,
+								978
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3094,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3069,
+								3069
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "archives.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3234,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1146,
+								1146
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/styling.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5339,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2611,
+								2618
+							],
+							[
+								3570,
+								3577
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -273,41 +412,41 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "index.php",
+					"buffer": 4,
+					"file": "css/layout.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 518,
+						"buffer_size": 3508,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								492,
-								492
+								467,
+								467
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 464.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 5,
 					"file": "sidebar.php",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 522,
+						"buffer_size": 451,
 						"regions":
 						{
 						},
@@ -320,14 +459,13 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -371,7 +509,7 @@
 	"project": "prinzessin-leah.sublime-project",
 	"replace":
 	{
-		"height": 66.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -380,8 +518,8 @@
 		"selected_items":
 		[
 			[
-				"func",
-				"functions.php"
+				"",
+				"/private/var/folders/jc/p7qh78k50b385jcwdhtv6n7w0000gn/T/fz3temp-1/links.php"
 			]
 		],
 		"width": 0.0
@@ -393,7 +531,11 @@
 		[
 			[
 				"",
-				"~/Documents/Dropbox/Bachelor-Arbeit/bachelor-arbeit.sublime-project"
+				"/Applications/XAMPP/xamppfiles/htdocs/kunden/frauhampel/website/wp-content/themes/prinzessin-leah/prinzessin-leah.sublime-workspace"
+			],
+			[
+				"sey",
+				"~/Documents/LeaHampel/sexyfem.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -413,7 +555,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 302.0,
+	"side_bar_width": 266.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
