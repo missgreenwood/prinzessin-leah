@@ -1,23 +1,20 @@
 		<?php get_header(); ?>
-		<!-- div#content -->
 
-			<!-- 
-				Baustelle
-				Layout kommt
-			-->
-			
-			<div id="articles" class="columns"><div class="columns-wrapper">
-			
-				<h1><?php the_title(); ?></h1><br>
-				<?php 
-				if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-					the_post_thumbnail('medium');
-					} 
-				?>
-				<br>
-				<br>
+
+
+			<article>
+
+				<h1><?php the_title(); ?></h1>
+
 				<?php
-					
+					if (has_post_thumbnail()) {
+						// check if the post has a Post Thumbnail assigned to it.
+						the_post_thumbnail();
+					}
+				?>
+
+				<?php
+
 					// Was zum Teufel: the_content();
 					// $content = get_post_field('post_content', $post->ID);
 
@@ -27,11 +24,11 @@
 					echo $content;
 				?>
 
-			</div></div>
+			</article>
 
 
 		</div><!-- content -->
-	
+
 		<?php get_sidebar(); ?>
 
 	</div><!-- website -->
