@@ -33,8 +33,9 @@ div.column .more-link,
 	text-transform: capitalize;
 	/*position: relative;*/
 	margin-right: 40px;
-	margin-bottom: 20px;
 	list-style: none !important;
+
+	line-height: 24px;
 }
 
 #menu-hauptlinks li:last-child {
@@ -90,7 +91,7 @@ div.column .more-link,
 
 	position: absolute;
 	left: 0;
-	top: 40px;
+	top: 60px;
 }
 
 #menu-hauptlinks li ul a {
@@ -106,7 +107,7 @@ div.column .more-link,
 	text-decoration: underline !important;
 } */
 
-@media only screen and (min-width: 764px) and (max-width: 940px) {
+@media only screen and (max-width: 1255px) {
 
 	#menu-hauptlinks li {
 		margin-right: 18px;

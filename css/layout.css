@@ -34,7 +34,7 @@ body {
 	position: relative;
 	float: left;
 	clear: both;
-	padding-bottom: 40px;
+	min-height: 130px;
 }
 
 	#menu-hauptlinks li {
