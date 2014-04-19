@@ -65,10 +65,10 @@ body {
 		display: block;
 	}
 
-#content {
+div.content {
 
-	float: right;
 	padding-left: 20px;
+	float: right;
 }
 
 #footer {
@@ -78,21 +78,17 @@ body {
 	overflow: hidden;
 }
 
+/* BASIC COLUMN SETUP */
+
 #footer .page {
 
-	max-width: 1380px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	height: 100px;
-	padding: 12px 20px;
-	margin-right: 40px;
+	padding: 12px 40px;
+	margin: 0;
+	max-width: 1380px;
 }
-
-#footer .content {
-
-	float: right;
-	width: 905px;
-}
-
-/* BASIC COLUMN SETUP */
 
 #leahampel {
 
@@ -120,7 +116,7 @@ div.columns div.left {
 	float:				right;
 }
 
-#content,
+div.content,
 div.columns {
 
 	width:				925px;
@@ -163,18 +159,13 @@ div.columns div.right,
 
 		#website,
 		#footer .page {
-
-			max-width: 1060px;
+			max-width: 1058px;
 		}
 
-		#footer .content {
-			width: 590px;
-		}
-
-		#content,
+		div.content,
 		div.columns-wrapper {
-
 			width: 610px;
+
 		}
 
 		#column-side {
@@ -196,13 +187,13 @@ div.columns div.right,
 	 */
 	@media only screen and (min-width: 764px) and (max-width: 940px) {
 
-		#content {
+		div.content {
 
 			padding-left: 250px;
 			float: none;
 		}
 
-		#content,
+		div.content,
 		div.columns-wrapper,
 		div.columns,
 		div.column {
@@ -220,15 +211,6 @@ div.columns div.right,
 		div.column {
 
 			float: none;
-		}
-
-		#footer .content {
-
-			float: none;
-			width: 100%;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-			padding-left: 270px;
 		}
 	}
 
@@ -253,14 +235,14 @@ div.columns div.right,
 			float: none;
 		}
 
-		#content {
+		div.content {
 
 			float: none;
 			margin: 0 auto;
 			padding-left: 0;
 		}
 
-		#content,
+		div.content,
 		div.columns-wrapper,
 		div.columns,
 		div.column {
@@ -278,13 +260,6 @@ div.columns div.right,
 
 			width: 295px;
 		}
-
-		#footer .content {
-
-			float: none;
-			max-width: 610px;
-			margin: 0 auto;
-		}
 	}
 
 	/*
@@ -295,7 +270,7 @@ div.columns div.right,
 	 */
 	@media only screen and (max-width: 650px) {
 
-		#content,
+		div.content,
 		div.columns-wrapper,
 		div.columns,
 		div.column {
@@ -306,11 +281,6 @@ div.columns div.right,
 		div.column {
 
 			float: none;
-		}
-
-		#footer .content {
-
-			width: 100%;
 		}
 	}
 
