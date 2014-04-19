@@ -3,17 +3,30 @@
 	padding: 0;
 }
 
+body,
+html {
+	height: 100%;
+}
+
 body {
 
+	position: relative;
 	font-size: 10px;
-	margin-top: 52px;
+	padding-top: 52px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	clear: both;
 }
 
 #website {
 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	max-width: 1380px;
+	min-height: 100%;
 	margin: 0 40px;
+	padding-bottom: 150px;
+	margin-bottom: -150px;
 }
 
 #header {
@@ -168,7 +181,9 @@ div.columns div.right,
 	@media only screen and (min-width: 764px) and (max-width: 940px) {
 
 		#content {
+
 			padding-left: 250px;
+			float: none;
 		}
 
 		#content,
@@ -176,6 +191,7 @@ div.columns div.right,
 		div.columns,
 		div.column {
 
+			-moz-box-sizing: border-box;
 			box-sizing: border-box;
 			width: 100% !important;
 		}
@@ -194,6 +210,7 @@ div.columns div.right,
 
 			float: none;
 			width: 100%;
+			-moz-box-sizing: border-box;
 			box-sizing: border-box;
 			padding-left: 270px;
 		}
@@ -214,7 +231,7 @@ div.columns div.right,
 
 		#leahampel {
 
-			position: relative;
+			position: relative !important;
 			top: 0;
 			margin: 50px auto;
 			float: none;
