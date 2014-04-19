@@ -65,7 +65,9 @@ div.column .more-link,
 }
 
 #menu-hauptlinks li li:hover:before,
-#menu-hauptlinks li li.current-menu-parent:before {
+#menu-hauptlinks li li.current-menu-parent:before,
+#menu-hauptlinks li li.current-menu-item:before {
+
 	content: "";
 	position: absolute;
 	width: 4px;
@@ -102,7 +104,7 @@ div.column .more-link,
 
 /* #menu-hauptlinks li li.current-menu-item a {
 	text-decoration: underline !important;
-} */ 
+} */
 
 @media only screen and (min-width: 764px) and (max-width: 940px) {
 
@@ -357,7 +359,7 @@ div.column em {
 
 #footer .followme {
 	float: right;
-	background: url(assets/img/twitter.gif) no-repeat left 1px;	
+	background: url(assets/img/twitter.gif) no-repeat left 1px;
 }
 
 #footer .followme a {
