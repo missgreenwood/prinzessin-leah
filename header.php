@@ -3,13 +3,13 @@
 
 	<head>
 
-		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?> charset=<?php bloginfo('charset'); ?>" /> 
+		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?> charset=<?php bloginfo('charset'); ?>" />
 
 		<meta name="author" content="Lea Hampel" />
 
 		<meta name="description" content="Lea Hampel, Journalistin, Redakteurin, Autorin, Moderatorin" />
 
-		<meta name="keywords" content="Lea Hampel, Journalistin, Autorin, Recherche, Moderation, Affe im Kopf" /> 
+		<meta name="keywords" content="Lea Hampel, Journalistin, Autorin, Recherche, Moderation, Affe im Kopf" />
 
 		<title><?php wp_title(' - ' , true, 'right'); ?> <?php bloginfo('name'); ?></title>
 
@@ -23,21 +23,21 @@
 		<link href="<?php echo get_template_directory_uri(); ?>/css/styling.css" rel="stylesheet" type="text/css" />
 
 		<!-- set pingback link for sites quoting this site -->
-		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" /> 
+		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-		<!-- set header template hook --> 
+		<!-- set header template hook -->
 		<?php wp_head(); ?>
 
 	</head>
 
 	<body>
 
-		<div id="website">
+		<div id="website" class="page">
 
-			<div id="content">
+			<div id="content" class="content">
 
 				<div id="header">
-			
-					<?php wp_nav_menu( array("theme_location" => "primary") ); ?> 
+
+					<?php wp_nav_menu( array("theme_location" => "primary") ); ?>
 
 				</div><!-- header -->
