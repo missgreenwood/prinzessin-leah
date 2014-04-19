@@ -48,6 +48,22 @@ body {
 		top: 30px;
 	}
 
+	#menu-hauptlinks li ul {
+
+		display: none;
+	}
+
+	#menu-hauptlinks li.current-menu-item ul,
+	#menu-hauptlinks li.current-menu-parent ul {
+
+		display: block;
+	}
+
+	#menu-hauptlinks li:hover ul {
+
+		display: block;
+	}
+
 #content {
 
 	float: right;

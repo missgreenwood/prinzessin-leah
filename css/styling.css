@@ -32,7 +32,7 @@ div.column .more-link,
 
 	text-transform: capitalize;
 	/*position: relative;*/
-	margin-right: 40px;
+	margin-right: 44px;
 	list-style: none !important;
 
 	line-height: 24px;
@@ -52,16 +52,17 @@ div.column .more-link,
 }
 
 #menu-hauptlinks li:hover:before,
-#menu-hauptlinks li.current-menu-parent:before {
+#menu-hauptlinks li.current-menu-parent:before,
+#menu-hauptlinks li.current-menu-item:before {
 
 	content: "";
 	position: absolute;
-	width: 8px;
-	height: 8px;
-	top: 8px;
-	margin-left: -14px;
+	top: auto !important;
+	width: 6px;
+	height: 6px;
+	margin-top: 9px;
+	margin-left: -11px;
 	border-radius: 1em;
-	/*left: -14px;*/
 	background: #000;
 }
 
@@ -69,14 +70,10 @@ div.column .more-link,
 #menu-hauptlinks li li.current-menu-parent:before,
 #menu-hauptlinks li li.current-menu-item:before {
 
-	content: "";
-	position: absolute;
 	width: 4px;
 	height: 4px;
-	top: 11px;
+	margin-top: 12px;
 	margin-left: -9px;
-	border-radius: 1em;
-	background: #000;
 }
 
 /* #menu-hauptlinks li li:hover {
@@ -84,6 +81,8 @@ div.column .more-link,
 } */
 
 #menu-hauptlinks li li {
+
+	position: relative;
 	margin-right: 24px;
 }
 
@@ -114,11 +113,13 @@ div.column .more-link,
 	}
 
 	#menu-hauptlinks li:hover:before,
-	#menu-hauptlinks li.current-menu-parent:before {
-		top: 11px;
-		width: 4px;
-		height: 4px;
-		margin-left: -8px;
+	#menu-hauptlinks li.current-menu-parent:before,
+	#menu-hauptlinks li.current-menu-item:before {
+
+		width: 5px;
+		height: 5px;
+		margin-top: 10px;
+		margin-left: -9px;
 	}
 
 	#menu-hauptlinks li a {
@@ -134,7 +135,8 @@ div.column .more-link,
 
 	#menu-hauptlinks li:hover:before,
 	#menu-hauptlinks li.current-menu-parent:before {
-		top: 11px;
+
+		margin-top: 11px;
 		width: 4px;
 		height: 4px;
 		margin-left: -8px;
@@ -154,7 +156,6 @@ div.column .more-link,
 	#menu-hauptlinks li:hover:before,
 	#menu-hauptlinks li.current-menu-parent:before {
 
-		top: 11px;
 		width: 4px;
 		height: 4px;
 		margin-left: -8px;
@@ -174,7 +175,7 @@ div.column .more-link,
 
 	#menu-hauptlinks li li:hover:before,
 	#menu-hauptlinks li li.current-menu-item:before {
-		top: 13px;
+		margin-top: 13px;
 	}
 }
 
