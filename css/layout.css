@@ -18,6 +18,11 @@ body {
 	clear: both;
 }
 
+li {
+
+	list-style: none;
+}
+
 div.page {
 
 	-moz-box-sizing: border-box;
@@ -36,33 +41,38 @@ div.page {
 	width: 100%;
 	clear: both;
 	min-height: 130px;
+
+	/*background: red;*/
 }
+
+	.menu-hauptlinks-container,
+	#menu-hauptlinks,
+	#subnav {
+
+		display: block;
+		width: 100%;
+		float: left;
+	}
+
+	#menu-hauptlinks {
+
+		/*background: blue;*/
+	}
 
 	#menu-hauptlinks li {
 
 		float: left;
 	}
 
-	#menu-hauptlinks ul {
+	#subnav {
 
 		position: absolute;
-		top: 30px;
+		top: 60px;
 	}
 
-	#menu-hauptlinks li ul {
+	#subnav li {
 
-		display: none;
-	}
-
-	#menu-hauptlinks li.current-menu-item ul,
-	#menu-hauptlinks li.current-menu-parent ul {
-
-		display: block;
-	}
-
-	#menu-hauptlinks li:hover ul {
-
-		display: block;
+		float: left;
 	}
 
 div.content {

@@ -18,7 +18,7 @@ a {
 em,
 strong,
 .more-link,
-#menu-hauptlinks,
+#header *,
 #leahampel .author,
 article h1,
 article h2,
@@ -87,7 +87,7 @@ article a {
 
 /* ! NAVIGATION */
 
-#menu-hauptlinks li {
+#header li {
 
 	text-transform: capitalize;
 	/*position: relative;*/
@@ -97,12 +97,12 @@ article a {
 	line-height: 24px;
 }
 
-#menu-hauptlinks li:last-child {
+#header li:last-child {
 
 	margin-right: 0px;
 }
 
-#menu-hauptlinks li a {
+#header li a {
 
 	color: #000;
 	font-size: 26px;
@@ -110,9 +110,9 @@ article a {
 	text-decoration: none;
 }
 
-#menu-hauptlinks li:hover:before,
-#menu-hauptlinks li.current-menu-parent:before,
-#menu-hauptlinks li.current-menu-item:before {
+#header li:hover:before,
+#header li.current-menu-parent:before,
+#header li.current-menu-item:before {
 
 	content: "";
 	position: absolute;
@@ -125,9 +125,9 @@ article a {
 	background: #000;
 }
 
-#menu-hauptlinks li li:hover:before,
-#menu-hauptlinks li li.current-menu-parent:before,
-#menu-hauptlinks li li.current-menu-item:before {
+#subnav li:hover:before,
+#subnav li.current-menu-parent:before,
+#subnav li.current-menu-item:before {
 
 	width: 4px;
 	height: 4px;
@@ -135,24 +135,15 @@ article a {
 	margin-left: -9px;
 }
 
-/* #menu-hauptlinks li li:hover {
-	text-decoration: underline;
-} */
-
-#menu-hauptlinks li li {
+#subnav li,
+#subnav:before {
 
 	position: relative;
 	margin-right: 24px;
 }
 
-#menu-hauptlinks li ul {
-
-	position: absolute;
-	left: 0;
-	top: 60px;
-}
-
-#menu-hauptlinks li ul a {
+#subnav li a,
+#subnav:before {
 
 	color: #000;
 	font-family: Georgia;
@@ -161,9 +152,20 @@ article a {
 	text-decoration: none;
 }
 
-/* #menu-hauptlinks li li.current-menu-item a {
-	text-decoration: underline !important;
-} */
+#subnav:before {
+
+	float: left;
+}
+
+body.page-id-63 #subnav:before {
+
+	content: "Themenfilter:";
+}
+
+body.home #subnav:before {
+
+	content: "Aktuelles:";
+}
 
 @media only screen and (max-width: 1255px) {
 
@@ -208,32 +210,32 @@ article a {
 
 @media only screen and (max-width: 480px) {
 
-	#menu-hauptlinks li {
+	#header li {
 		margin-right: 20px;
 	}
 
-	#menu-hauptlinks li:hover:before,
-	#menu-hauptlinks li.current-menu-parent:before {
+	#header li:hover:before,
+	#header li.current-menu-parent:before {
 
 		width: 4px;
 		height: 4px;
 		margin-left: -8px;
 	}
 
-	#menu-hauptlinks li a {
+	#header li a {
 		font-size: 14px;
 	}
 
-	#menu-hauptlinks li li {
+	#subnav li {
 		margin-right: 10px !important;
 	}
 
-	#menu-hauptlinks li li a {
+	#subnav li a {
 		font-size: 10px;
 	}
 
-	#menu-hauptlinks li li:hover:before,
-	#menu-hauptlinks li li.current-menu-item:before {
+	#subnav li:hover:before,
+	#subnav li.current-menu-item:before {
 		margin-top: 13px;
 	}
 }
