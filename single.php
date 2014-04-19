@@ -1,6 +1,10 @@
 		<?php get_header(); ?>
 
+			<!--
 
+			SINGLE PAGE
+
+			-->
 
 			<article>
 
