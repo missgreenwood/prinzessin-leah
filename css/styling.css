@@ -15,14 +15,53 @@ a {
 /* FONTS */
 
 
-div.column em,
-div.column strong,
-div.column .more-link,
+em,
+strong,
+.more-link,
 #menu-hauptlinks,
 #leahampel .author,
+article h1,
 #footer * {
 
 	font-family: "Open Sans", sans-serif;
+}
+
+
+/* ! ARTICLE CONTENT */
+
+article .category {
+
+	display: block;
+	text-decoration: none !important;
+	margin-bottom: 12px;
+}
+
+article h1 {
+
+	font-size: 41px;
+	line-height: 52px;
+	margin-bottom: 24px;
+}
+
+article img {
+
+	width: 100% !important;
+	height: auto;
+	margin-bottom: 12px;
+}
+
+article p {
+
+	color: #333;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 24px;
+}
+
+article strong {
+
+	text-decoration: underline;
+	margin-bottom: 24px;
 }
 
 

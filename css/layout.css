@@ -33,6 +33,7 @@ body {
 
 	position: relative;
 	float: left;
+	width: 100%;
 	clear: both;
 	min-height: 130px;
 }
@@ -314,3 +315,10 @@ div.columns div.right,
 	}
 
 /* EO COLUMN SETUP */
+
+/* ! ARTICLE */
+
+article {
+
+	display: block;
+}
