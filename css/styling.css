@@ -21,6 +21,9 @@ strong,
 #menu-hauptlinks,
 #leahampel .author,
 article h1,
+article h2,
+article h3,
+article h4,
 #footer * {
 
 	font-family: "Open Sans", sans-serif;
@@ -28,6 +31,11 @@ article h1,
 
 
 /* ! ARTICLE CONTENT */
+
+article {
+
+	padding-bottom: 48px;
+}
 
 article .category {
 
@@ -40,6 +48,14 @@ article h1 {
 
 	font-size: 41px;
 	line-height: 52px;
+	margin-bottom: 24px;
+}
+
+article h2,
+article h3 {
+
+	font-size: 24px;
+	line-height: 32px;
 	margin-bottom: 24px;
 }
 
@@ -62,6 +78,10 @@ article strong {
 
 	text-decoration: underline;
 	margin-bottom: 24px;
+}
+
+article a {
+	/*background: red;*/
 }
 
 
