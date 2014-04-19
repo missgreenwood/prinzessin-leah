@@ -67,9 +67,8 @@ body {
 #leahampel {
 
 	width: 200px;
-	position: absolute;
+	position: fixed;
 	top: 52px;
-	position: absolute;
 }
 
 
