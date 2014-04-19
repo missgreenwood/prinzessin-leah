@@ -38,7 +38,7 @@ body {
 #content {
 
 	float: right;
-	margin-left: 20px;
+	padding-left: 20px;
 }
 
 #footer {
@@ -225,6 +225,7 @@ div.columns div.right,
 
 			float: none;
 			margin: 0 auto;
+			padding-left: 0;
 		}
 
 		#content,
