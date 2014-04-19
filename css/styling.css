@@ -153,6 +153,7 @@ div.column .more-link,
 
 	#menu-hauptlinks li:hover:before,
 	#menu-hauptlinks li.current-menu-parent:before {
+
 		top: 11px;
 		width: 4px;
 		height: 4px;
@@ -169,6 +170,11 @@ div.column .more-link,
 
 	#menu-hauptlinks li li a {
 		font-size: 10px;
+	}
+
+	#menu-hauptlinks li li:hover:before,
+	#menu-hauptlinks li li.current-menu-item:before {
+		top: 13px;
 	}
 }
 
