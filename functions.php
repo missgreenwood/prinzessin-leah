@@ -116,4 +116,151 @@
 			)
 		);
 	}
+
+	/**
+	 * sub navigation
+	 *
+	 *	prints a menu's currently active children as a hierarchical list
+	 */
+	class Subnav {
+				
+		public $post;
+	    public $menu;
+
+		public $args = array(
+			
+			'menue_id'				=> 'subnav',
+			'current_path_class'	=> 'current'
+		);
+
+	    public $parent	= false;
+	    public $items	= array();
+	    public $post_parent;
+	    
+	    /**
+	     * constructor
+	     *
+	     * @param	string	menue-identifier
+	     * @param	array	(optional) additional arguments.
+	     */
+	    function __construct($menu, $args=array()) {
+	    
+	    	global $post;
+	    	
+	    	$this->menu = $menu;
+	    	$this->post = $post;
+	    	$this->args = array_merge($this->args, $args);
+	    	
+	    	$this->init();
+	    }
+	    
+	    function init() {
+	    	
+	    	// get first parent in hierarchy
+	    	$parent = $this->post;
+	    	while( $parent->post_parent !== 0 ) {
+	    	
+	    		$parent = get_post($parent->post_parent);
+	    	}
+	    	
+	    	$this->post_parent = $parent;
+	    	
+	        	
+	    	// list of all menue items
+	    	$locations = get_nav_menu_locations();
+	    	$menu	= wp_get_nav_menu_object( $locations[$this->menu] );
+	    	$items	= wp_get_nav_menu_items( $menu->term_id, array('depth' => 1));
+
+
+	    	echo '<!--'.PHP_EOL;
+	    	
+	    	// find parent in menue
+	    	foreach ( (array) $items as $key => $item ) {
+
+	    		if ($this->parent) {
+
+	    			$this->add($item);
+	    			
+	    		} else if ( $item->object_id == $this->post_parent->ID ) {
+	    			
+	    			$this->parent = $item;
+	    		} 
+	    	}
+	    	
+	    	echo PHP_EOL.'-->';
+	    }
+	    
+	    function add( $item ) {
+
+		    
+	    	if ($this->parent->ID == $item->menu_item_parent) {
+	    	
+	    		echo strtoupper($item->title).' direct child of current parent '.strtoupper($this->parent->title).PHP_EOL;
+	    		
+	    		$item->level = 0;
+	    		$this->items[$item->ID] = $item;
+	    		
+	    	} else if (isset($this->items[$item->menu_item_parent])) {
+	    		
+	    		$item->level = $this->items[$item->menu_item_parent]->level + 1;
+	    		$this->items[$item->ID] = $item;
+	    	}
+	    	
+	    	if ($this->post->ID == $item->object_id) {
+
+	    		$temp = $item;
+	    		$temp->css = $this->args['current_path_class'].' current_page_item';
+	    		
+	    		while ($this->parent->ID != $temp->menu_item_parent) {	
+	    			$temp = $this->items[$temp->menu_item_parent];
+	    			$temp->css = $this->args['current_path_class'];
+	    		}
+	    		
+	    	} else {
+	    		
+	    		$item->css = '';
+	    	}
+	    }
+	    
+	    function __toString() {
+	    	
+	    	$subnav = '<ul id="'.$this->args['menue_id'].'">';
+	    	
+	    	$level = 0;
+	    	$li = '';
+	    	
+	    	foreach ($this->items as $id => $item) {
+	    	
+	    		if ($level != $item->level) {
+	    			
+	    			// next hierarchy
+	    			if ($level < $item->level) {
+	    				
+	    				$level++;
+	    				$subnav .= '<ul>';
+	    				$li = '';
+	    			
+	    			// close current list(s)
+	    			} else {
+	    			
+	    				$delta = $level - $item->level;
+	    				for ($i=0; $i<$delta; $i++) {
+	    					
+	    					$level--;
+	    					$subnav .= '</li></ul>';
+	    				}
+	    			}
+	    		}
+	    			
+	    		$subnav .= $li.'<li class="page_item '.$item->css.'"><a title="'.$item->title.'" href="'.$item->url.'">'.$item->title.'</a>';
+	    		$li = '</li>';
+	    	}
+	    	
+	    	for ($i=0; $i<=$level; $i++) $subnav .= '</li></ul>';
+	    	
+	    	return $subnav;
+	    }
+	}
+
 ?>
+

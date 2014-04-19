@@ -37,7 +37,16 @@
 			<div id="content" class="content">
 
 				<div id="header">
-
-					<?php wp_nav_menu( array("theme_location" => "primary") ); ?>
+			
+					<?php /* wp_nav_menu( array("theme_location" => "primary") ); */ ?> 
+					<?php wp_nav_menu( array("theme_location" => "primary", "depth" => 1) ); ?> 
+					<?php 
+						echo new Subnav('primary');
+						/* echo "<ul>\n";
+						if ($page_parent!=0) wp_list_pages('title_li=&child_of='.$page_parent.'');
+						else wp_list_pages('title_li=&child_of='.$post_id.'');
+						echo "</ul>\n";
+						*/
+						?>
 
 				</div><!-- header -->
