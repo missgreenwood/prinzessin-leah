@@ -4,12 +4,14 @@
 					<div class="page">
 						<div class="content">
 
-							<ul class="followme">
-								<b>Folge mir:</b>
+							<div class="followme">
+
+								<span>Folge mir:</span>
+
 								<a class="facebook" href="facebook.com/lea.hampel"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.gif"/>FACEBOOK</a>
 								<a class="twitter" href="twitter.com/leahampel"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.gif"/>TWITTER</a>
-								<a></a>
-							</ul>
+
+							</div>
 
 							<a class="imprint"><?php wp_nav_menu( array("theme_location" => "footer") ); ?></a>
 

@@ -414,13 +414,18 @@ div.column em {
 	text-decoration: none;
 }
 
+#footer li {
+
+	list-style: none;
+}
+
 #footer .imprint {
 	/* float: left; */
 	/* margin-left:300px;*/
 }
 
 #footer img {
-	margin-right: 10px;
+	margin-right: 4px;
 	margin-bottom: -5px;
 }
 
@@ -431,8 +436,8 @@ div.column em {
 
 #footer .followme a {
 
-	padding-left: 22px;
-	margin-left: 16px;
+	padding-left: 16px;
+	/*margin-left: 16px;*/
 	background: url(assets/img/twitter.gif) no-repeat left 1px;
 }
 
@@ -441,7 +446,7 @@ div.column em {
 	color: #f64d4d;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 470px) {
 
 	#footer span {
 		display: none;
