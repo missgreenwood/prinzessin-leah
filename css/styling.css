@@ -44,6 +44,11 @@ article .category {
 	margin-bottom: 12px;
 }
 
+article a {
+
+	color: #f64d4d;
+}
+
 article h1 {
 
 	font-size: 41px;
