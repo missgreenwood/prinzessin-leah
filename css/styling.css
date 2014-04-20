@@ -459,3 +459,12 @@ div.column em {
 		display: none;
 	}
 }
+
+/* ! Blogroll */
+
+body.page-id-50 a:after {
+
+	content: attr(title);
+	display: block;
+	color: #333;
+}
