@@ -1,5 +1,5 @@
 <?php
-	
+
 	/*
 		WP CONFIGURATION
 	*/
@@ -34,12 +34,12 @@
 		$medium = "Artikel";
 		$tag = "";
 
-		// get medium type		
+		// get medium type
 		$terms = get_the_terms( $post->ID , 'medium' );
 		if (is_array($terms) AND count($terms) > 0) {
 			$medium = array_shift($terms)->name;
 		}
-	
+
 		// Build tag list
 		$tags = wp_get_post_tags( $post->ID );
 		for ($i = 0; $i < count($tags); $i++) {
@@ -50,19 +50,19 @@
 		// check if the post has a Post Thumbnail assigned to it.
 		if ( has_post_thumbnail() ) {
 			$markup .= get_the_post_thumbnail();
-		} 
+		}
 
 		// medium-taxonomy + tag(s)
-		$markup .= '<strong>' . $medium . " &bull; " . $tag . '</strong>' . PHP_EOL;
+		$markup .= '<strong class="title-meta">' . $medium . " &bull; " . $tag . '</strong>' . PHP_EOL;
 		// title
 		$markup .= '<em>' . get_the_title() . '</em>' . PHP_EOL;
 		// content
 		// $markup .= get_the_content("MÄHR", true);
 		// more-link
 		// -> auto
-	
+
 		echo $markup;
-		
+
 		the_content();
 
 		echo '</a>';
@@ -77,13 +77,13 @@
 		echo '<h2 class="title">'.$title.'</h2>';
 	}
 
-	// Enable Theme Features such as Sidebars, Navigation Menus, Post Thumbnails, Post Formats, Custom Headers, Custom Backgrounds and others	
+	// Enable Theme Features such as Sidebars, Navigation Menus, Post Thumbnails, Post Formats, Custom Headers, Custom Backgrounds and others
 	// Define functions used in several template files of your theme
 	// Set up an options menu, giving site owners options for colors, styles, and other aspects of your theme
 
 	/*
 		Add custom type (taxonomy) for medium
-		
+
 		## reference
 		- tutorial http://code.tutsplus.com/tutorials/introducing-wordpress-3-custom-taxonomies--net-11658
 		- api http://codex.wordpress.org/Function_Reference/register_taxonomy
@@ -97,8 +97,8 @@
 				'show_admin_column' => true,
 				'show_ui' => true,
 				'hierarchical' => true,
-				
-				
+
+
 				'labels' => array(
 
 					'name' => 'Medien',
