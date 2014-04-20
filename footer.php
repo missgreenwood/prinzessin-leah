@@ -8,8 +8,8 @@
 
 								<span>Folge mir:</span>
 
-								<a class="facebook" href="facebook.com/lea.hampel"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.gif"/>FACEBOOK</a>
-								<a class="twitter" href="twitter.com/leahampel"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.gif"/>TWITTER</a>
+								<a class="facebook" href="https://www.facebook.com/lea.hampel"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.gif"/>FACEBOOK</a>
+								<a class="twitter" href="https://twitter.com/leahampel"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.gif"/>TWITTER</a>
 
 							</div>
 
