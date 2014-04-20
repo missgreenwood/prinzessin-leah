@@ -489,11 +489,12 @@ body.page-id-50 article a:after {
 
 /* ! Ueber mich */
 
-body.page-id-168 {
+body.page-id-168 article{
+	width: 80%;
+}
 
-	content: attr(title);
-	display: block;
-	color: #333;
+body.page-id-168 p{
+	width: 77%;
 }
 
 #subnav li {
