@@ -24,9 +24,15 @@ article h1,
 article h2,
 article h3,
 article h4,
-#footer * {
+#footer *,
+#page-navigation * {
 
 	font-family: "Open Sans", sans-serif;
+}
+
+.title-meta {
+
+	text-decoration: none !important;
 }
 
 
@@ -51,8 +57,8 @@ article a {
 
 article h1 {
 
-	font-size: 41px;
-	line-height: 52px;
+	font-size: 54px;
+	line-height: 61px;
 	margin-bottom: 24px;
 }
 
@@ -122,10 +128,10 @@ article a {
 	content: "";
 	position: absolute;
 	top: auto !important;
-	width: 6px;
-	height: 6px;
+	width: 7px;
+	height: 7px;
 	margin-top: 9px;
-	margin-left: -11px;
+	margin-left: -12px;
 	border-radius: 1em;
 	background: #000;
 }
@@ -136,7 +142,7 @@ article a {
 
 	width: 4px;
 	height: 4px;
-	margin-top: 12px;
+	margin-top: 11px;
 	margin-left: -9px;
 }
 
@@ -152,13 +158,14 @@ article a {
 
 	color: #000;
 	font-family: Georgia;
-	font-size: 14px;
+	font-size: 16px;
 	text-transform: none;
 	text-decoration: none;
 }
 
 #subnav:before {
 
+	line-height: 23px;
 	float: left;
 }
 
@@ -464,11 +471,20 @@ div.column em {
 
 /* ! Blogroll */
 
-body.page-id-50 a:after {
+body.page-id-50 article a {
+
+	font-size: 24px;
+	border-bottom: 1px solid #f64d4d;
+}
+
+body.page-id-50 article a:after {
 
 	content: attr(title);
 	display: block;
+	margin-bottom: 24px;
+
 	color: #333;
+	font-size: 14px;
 }
 
 /* ! Ueber mich */
@@ -503,4 +519,49 @@ body.page-id-168 {
 #subnav li li.current-menu-item,
 #subnav li li.current-menu-item a {
 	display: block !important;
+}
+
+/* ! page# navigation */
+
+#page-navigation {
+
+	position: relative;
+	clear:both;
+	float:left;
+	width: 100%;
+	min-height: 48px;
+}
+
+#page-navigation .button a {
+
+	border: 1px solid #eee;
+	padding: 6px 12px;
+}
+
+#page-navigation .button a {
+
+	color: #f64d4d;
+}
+
+#page-navigation .button:hover a {
+
+	text-decoration: underline;
+}
+
+#page-navigation #next {
+	float: right;
+}
+
+#page-navigation #pagenumber {
+
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	width: 200px;
+	text-align: center;
+	color: #ddd;
+}
+
+#page-navigation #prev {
+	float: left;
 }
