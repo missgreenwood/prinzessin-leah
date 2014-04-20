@@ -162,7 +162,7 @@ article a {
 	float: left;
 }
 
-body.page-id-63 #subnav:before {
+body.archive #subnav:before {
 
 	content: "Themenfilter:";
 }
@@ -358,6 +358,8 @@ div.column em {
 #leahampel {
 
 	text-align: center;
+	border-radius: 10em;
+	background: white;
 }
 
 #leahampel .author {
@@ -467,4 +469,38 @@ body.page-id-50 a:after {
 	content: attr(title);
 	display: block;
 	color: #333;
+}
+
+/* ! Ueber mich */
+
+body.page-id-168 {
+
+	content: attr(title);
+	display: block;
+	color: #333;
+}
+
+#subnav li {
+	display: none;
+}
+
+#subnav li.current-menu-item,
+#subnav li.current-menu-item li,
+#subnav li.current-menu-parent,
+#subnav li.current-menu-parent li {
+	display: block;
+}
+
+#subnav li.current-menu-item > a,
+#subnav li.current-menu-parent > a {
+	display: none;
+}
+
+#subnav > li:before {
+	display: none;
+}
+
+#subnav li li.current-menu-item,
+#subnav li li.current-menu-item a {
+	display: block !important;
 }
