@@ -8,7 +8,29 @@
 
 			<article>
 
-				<h1><?php the_title(); ?></h1>
+				<?php
+
+					$medium = "Artikel";
+					$tag = "";
+
+					// get medium type
+					$terms = get_the_terms( $post->ID , 'medium' );
+					if (is_array($terms) AND count($terms) > 0) {
+						$medium = array_shift($terms)->name;
+					}
+
+					// Build tag list
+					$tags = wp_get_post_tags( $post->ID );
+					for ($i = 0; $i < count($tags); $i++) {
+						$tag .= '<span>' . $tags[$i]->name . '</span> ';
+					}
+
+					// medium-taxonomy + tag(s)
+					echo '<strong class="title-meta">' . $medium . " &bull; " . $tag . '</strong>' . PHP_EOL;
+
+				?>
+
+					<h1><?php the_title(); ?></h1>
 
 				<?php
 					if (has_post_thumbnail()) {
