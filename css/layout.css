@@ -66,8 +66,8 @@ div.page {
 
 	#subnav {
 
-		position: absolute;
-		top: 60px;
+		margin-top: 38px;
+		margin-bottom: 32px;
 	}
 
 	#subnav li {
@@ -239,10 +239,13 @@ div.columns div.right,
 
 		#leahampel {
 
+			float: left;
 			position: relative !important;
 			top: 0;
+			width: 100%;
 			margin: 50px auto;
-			float: none;
+
+			border-radius: 0;
 		}
 
 		div.content {
@@ -280,6 +283,11 @@ div.columns div.right,
 	 */
 	@media only screen and (max-width: 650px) {
 
+		div.page {
+
+			padding: 0 20px;
+		}
+
 		div.content,
 		div.columns-wrapper,
 		div.columns,
@@ -291,6 +299,14 @@ div.columns div.right,
 		div.column {
 
 			float: none;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+
+		#page-navigation * {
+
+			font-size: 14px;
 		}
 	}
 

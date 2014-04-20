@@ -242,14 +242,44 @@ body.home #subnav:before {
 		margin-right: 10px !important;
 	}
 
-	#subnav li a {
-		font-size: 10px;
+	#subnav:before {
+		display: none;
+	}
+
+	#subnav li {
+		float: none;
 	}
 
 	#subnav li:hover:before,
 	#subnav li.current-menu-item:before {
-		margin-top: 13px;
+		margin-top: 11px;
+		margin-left: -8px;
 	}
+}
+
+#subnav li {
+	display: none;
+}
+
+#subnav li.current-menu-item,
+#subnav li.current-menu-item li,
+#subnav li.current-menu-parent,
+#subnav li.current-menu-parent li {
+	display: block;
+}
+
+#subnav li.current-menu-item > a,
+#subnav li.current-menu-parent > a {
+	display: none;
+}
+
+#subnav > li:before {
+	display: none;
+}
+
+#subnav li li.current-menu-item,
+#subnav li li.current-menu-item a {
+	display: block !important;
 }
 
 
@@ -495,31 +525,6 @@ body.page-id-168 article{
 
 body.page-id-168 p{
 	width: 77%;
-}
-
-#subnav li {
-	display: none;
-}
-
-#subnav li.current-menu-item,
-#subnav li.current-menu-item li,
-#subnav li.current-menu-parent,
-#subnav li.current-menu-parent li {
-	display: block;
-}
-
-#subnav li.current-menu-item > a,
-#subnav li.current-menu-parent > a {
-	display: none;
-}
-
-#subnav > li:before {
-	display: none;
-}
-
-#subnav li li.current-menu-item,
-#subnav li li.current-menu-item a {
-	display: block !important;
 }
 
 /* ! page# navigation */
