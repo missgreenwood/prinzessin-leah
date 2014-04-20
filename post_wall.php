@@ -56,7 +56,7 @@
 	// posts to distribute, starting on second row
 	$distribute_posts = $post_count - 2;
 	// rows to print (2 x main column, 1 x side column)
-	$rows = floor($distribute_posts / 3);
+	$rows = ceil($distribute_posts / 3);
 
 
 	// POST WALL
