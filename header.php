@@ -40,8 +40,19 @@
 
 					<?php /* wp_nav_menu( array("theme_location" => "primary") ); */ ?>
 					<?php wp_nav_menu( array("theme_location" => "primary", "depth" => 1) ); ?>
+					<?php wp_nav_menu( array("theme_location" => "primary", "depth" => 0, "menu_id" => "subnav", "container" => false) ); ?>
 					<?php
-						echo new Subnav('primary');
+						// echo new Subnav('primary');
+						/*
+						$locations = get_nav_menu_locations();
+						$menu = wp_get_nav_menu_object( $locations["primary"] );
+						
+						$items	= wp_get_nav_menu_items( $menu->term_id, array('depth' => 1));
+
+						var_dump($items);
+						//
+						//
+
 						/* echo "<ul>\n";
 						if ($page_parent!=0) wp_list_pages('title_li=&child_of='.$page_parent.'');
 						else wp_list_pages('title_li=&child_of='.$post_id.'');
