@@ -519,12 +519,13 @@ body.page-id-50 article a:after {
 
 /* ! Ueber mich */
 
-body.page-id-168 article{
+body.page-id-168 article {
 	width: 80%;
 }
 
-body.page-id-168 p{
-	width: 77%;
+body.page-id-168 article p {
+
+	max-width: 470px;
 }
 
 /* ! page# navigation */
