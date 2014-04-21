@@ -10,23 +10,18 @@
 				// options: posts per page
 				$posts_per_page = $wpdb->get_var("SELECT option_value FROM $wpdb->options WHERE option_name = 'posts_per_page'");
 
-				// posts of current category
-				$posts_with_category = $all_posts;
-
 				// If no category is selected, strip start-page number of items from overview
-				$page_offset = $posts_per_page * $paged;
-
-
+				$post_offset = $posts_per_page * $paged;
 				// else determine posts of current category listed on start page
 				if ($cat !== 28) {
 
-					$page_offset = 0;
+					$post_offset = 0;
 					$posts_array = get_posts(array(
 						"posts_per_page" => $posts_per_page
 					));
 
 					// scan all categories for each post on start page, if it matches
-					// selected category. if yes, increase $page_offset, skipping this post
+					// selected category. if yes, increase $post_offset, skipping this post
 					for ($i = 0; $i < count($posts_array); $i++) {
 
 						// categories of current post
@@ -35,7 +30,7 @@
 						for ($c = 0; $c < count($categories); $c++) {
 
 							if ($categories[$c]->term_id === $cat) {
-								$page_offset += 1;
+								$post_offset += 1;
 								break;
 							}
 						}
@@ -48,23 +43,37 @@
 				} else {
 
 					// number of all posts in archive
-					$archived_posts = wp_count_posts()->publish;
-					$categories_posts = $archived_posts;
+					$categories_posts = wp_count_posts()->publish;
 				}
 
 				// pages to show
-				$pages_count = ceil(($categories_posts - $page_offset)/$posts_per_page);
+				$pages_count = ceil(($categories_posts - $post_offset)/$posts_per_page);
 
 				// finally, build posts query
 				$wp_query = new WP_Query(array(
 
-					"offset" => $page_offset + $posts_per_page * ($paged - 1),
+					"offset" => $post_offset + $posts_per_page * ($paged - 1),
 					"cat" => $cat,
 					"posts_per_page" => $posts_per_page
 				));
 
-				// echo "<h1>cat: ". $cat. ' offset: ' . $page_offset . " all posts " . $all_posts . " loaded posts:" . $wp_query->post_count . "</h1>";
+				echo PHP_EOL;
+				echo "<!--".PHP_EOL;
+
+				echo "Posts in category: ".$categories_posts." (".(get_category($cat)->category_count).")".PHP_EOL;
+				echo "Posts per page: ".$posts_per_page.PHP_EOL;
+				echo "Pages: ".$pages_count.PHP_EOL;
+				echo "Current page: ".$paged.PHP_EOL;
+				echo "Post offset: ".$post_offset.PHP_EOL;
+				echo "Current category: ".$cat.PHP_EOL;
+				echo "Calculated offset: ".($post_offset + $posts_per_page * ($paged - 1)).PHP_EOL;
+
+				echo "-->".PHP_EOL;
+
+				// echo "<h1>cat: ". $cat. ' offset: ' . $post_offset . " all posts " . $all_posts . " loaded posts:" . $wp_query->post_count . "</h1>";
 				// echo "<h2>Seite" . $paged . '/' . $pages_count . "</h2>";
+
+
 
 
 				include("post_wall.php");
