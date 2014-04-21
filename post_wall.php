@@ -53,11 +53,11 @@
 	$current_post_count = 0;
 	// current post count of teasers
 	$post_count = $wp_query->post_count;
-	// posts to distribute, starting on second row
-	$distribute_posts = $post_count - 2;
-	// rows to print (2 x main column, 1 x side column)
-	$rows = floor($distribute_posts / 3);
 
+	$total_rows = ceil($post_count + 1) / 2;
+	// foreach two rows, one right row
+	$right_rows = floor($total_rows / 2);
+	$left_rows = ($total_rows - $right_rows);
 
 	// POST WALL
 
@@ -71,7 +71,7 @@
 			// Latest
 			print_next_post('<div id="latest">');
 
-			for ($i = 0; $i < $rows; $i++) {
+			for ($i = 0; $i < $right_rows; $i++) {
 				print_row();
 			}
 		?>
@@ -84,7 +84,7 @@
 			// SIDE COLUMN (RIGHT)
 
 			// print uneven posts in sidebar
-			for ($i = 0; $i <= $rows; $i++) {
+			for ($i = 0; $i < $left_rows; $i++) {
 				print_row();
 			}
 		?>
