@@ -80,14 +80,10 @@
 
 			?>
 
-			<div class="content">
-
-				<div id="page-navigation">
-					<div id="prev" class="button"><?php previous_posts_link("&laquo; neuere Beiträge"); ?></div>
-					<div id="pagenumber"><?php echo $paged . '|' . $pages_count; ?></div>
-					<div id="next" class="button"><?php if ($paged < $pages_count) next_posts_link("frühere Beiträge &raquo;"); ?></div>
-				</div>
-
+			<div id="page-navigation">
+				<div id="prev" class="button"><?php previous_posts_link("&laquo; neuere Beiträge"); ?></div>
+				<div id="pagenumber"><?php echo $paged . '|' . $pages_count; ?></div>
+				<div id="next" class="button"><?php if ($paged < $pages_count) next_posts_link("frühere Beiträge &raquo;"); ?></div>
 			</div>
 
 		</div><!-- content -->
