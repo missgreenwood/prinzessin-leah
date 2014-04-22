@@ -63,7 +63,33 @@
 
 		echo $markup;
 
-		the_content();
+		// customize more tag	
+		// overridden if personalized more quicktag is set manually in wp-admin backend
+
+		// 1. get post medium type
+
+		$terms = get_the_terms( $post->ID, 'medium' );
+
+		foreach ( $terms as $term ) {
+			global $mediatype; 
+			ob_start(); 
+			echo $term->slug;
+			$mediatype = ob_get_contents();
+			ob_get_clean();  
+			unset($term);
+		} 
+
+		// 2. set more tag accordingly
+
+		if ( $mediatype == 'audio') {
+			the_content('anhören');
+		}
+		elseif ( $mediatype == 'video') {
+			the_content('ansehen'); 
+		}
+		else {
+			the_content('lesen'); 
+		}
 
 		echo '</a>';
 	}
@@ -141,4 +167,5 @@
 	        );
 	    return $content;
 	}
+
 ?>
