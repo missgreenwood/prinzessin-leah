@@ -7,7 +7,42 @@
 			-->
 
 			<article>
+ 
 
+				<?php 
+
+					// setup category display for post 
+					$args = array('orderby' => 'ID', 'style' => 'list', 'hide_empty' => 0, 'child_of' => 26, 'title_li' => '', 'current_category' => 1);
+				
+					// default values
+
+					// 'show_option_all' 	 => '', 
+					// 	'order'              => 'ASC',
+					// 	'style'              => 'list',
+					// 	'show_count'         => 0,
+					// 	'use_desc_for_title' => 1,
+					// 	'child_of'           => ,
+					// 	'feed'               => '',
+					// 	'feed_type'          => '',
+					// 	'feed_image'         => '',
+					// 	'exclude'            => '',
+					// 	'exclude_tree'       => '',
+					// 	'include'            => '',
+					// 	'hierarchical'       => 1,						
+					// 	'show_option_none'   => __( 'No categories' ),
+					// 	'number'             => null,
+					// 	'echo'               => 1,
+					// 	'depth'              => 0,
+					// 	'pad_counts'         => 0,
+					// 	'taxonomy'           => 'category',
+					// 	'walker'             => null 
+
+				?>
+
+				<!-- uncomment to display article categories --> 
+
+				<!-- <ul class='article-cats'><?php wp_list_categories( $args ); ?></ul> -->
+				
 				<?php
 
 					$medium = "Artikel";
