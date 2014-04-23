@@ -11,12 +11,18 @@ a {
 	line-height: 1.6em;
 }
 
+div p strong {
+	font-family: Georgia;
+	font-size: 16px;
+	color: #333;
+	font-weight: normal;
+}
 
 /* FONTS */
 
 
 em,
-strong,
+strong, 
 .more-link,
 #header *,
 #leahampel .author,
@@ -24,6 +30,7 @@ article h1,
 article h2,
 article h3,
 article h4,
+article b, 
 #footer *,
 #page-navigation * {
 
@@ -35,7 +42,6 @@ article h4,
 	text-decoration: none !important;
 }
 
-
 /* ! ARTICLE CONTENT */
 
 article {
@@ -46,9 +52,57 @@ article {
 article .category {
 
 	display: block;
-	text-decoration: none !important;
-	margin-bottom: 12px;
+	text-decoration: none !important; 
+	margin-bottom: 12px; 
 }
+
+/* uncomment to style article categories */
+
+/* 
+article ul {
+
+	margin: 0;  
+	padding: 0;  
+	text-align: left; 
+	list-style-type: none; 
+	margin-bottom: 20px;
+	margin-top: -50px;
+}
+
+article ul:before {
+
+	content: "Themenfilter:";
+	color: #000;
+}
+
+article ul li {
+
+	display: inline;
+	position: relative;
+}
+
+article ul li:hover:before,
+article ul li.current-menu-parent:before,
+article ul li.current-menu-item:before {
+
+	content: "";
+	position: absolute;
+	top: auto !important;
+	width: 4px;
+	height: 4px;
+	margin-top: 11px;
+	margin-left: 0;
+	border-radius: 1em;
+	background: #000; 
+}
+
+article ul li a {
+
+	text-decoration: none;
+	color: #000;
+	padding: .2em 1em;  
+}
+*/ 
 
 article a {
 
@@ -91,10 +145,13 @@ article strong {
 	margin-bottom: 24px;
 }
 
-article a {
-	/*background: red;*/
-}
+/* subtitles of article pictures */
+article b {
 
+	font-size: 16px;
+	color: #000;
+	font-style: normal;
+}
 
 /* ! NAVIGATION */
 
