@@ -101,6 +101,8 @@
 								case 'video/quicktime':
 									// display customized video player
 									echo wp_video_shortcode( $attr ); break; 
+								// default: 
+									// echo 'No video attachment! '; break; 
 							}
 						}	
 					}
@@ -120,6 +122,8 @@
 								case 'audio/vnd.wav':
 									// display costumized audio player 
 									echo wp_audio_shortcode( $attr ); break; 
+								// default: 
+									// echo 'No audio attachment! '; break; 
 							}
 						}	
 					}
