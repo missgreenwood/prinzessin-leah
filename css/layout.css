@@ -224,11 +224,6 @@ div.columns div.right,
 			float: none;
 		}
 
-		#subnav li:nth-child(4) {
-
-			clear: left;
-		}
-
 	}
 
 	/*
@@ -320,6 +315,20 @@ div.columns div.right,
 
 			visibility: hidden;
 		}
+	}
+
+	/*
+		fix for iPad portrait view 
+		- header subnav enforce linebreak after 3rd item   
+	*/
+
+	@media only screen and (width: 768px) {
+
+		#subnav li:nth-child(4) {
+
+			clear: left;
+		}
+
 	}
 
 /* EO COLUMN SETUP */
