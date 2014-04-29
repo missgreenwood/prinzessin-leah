@@ -42,7 +42,6 @@ div.page {
 	clear: both;
 	min-height: 130px;
 
-	/*background: red;*/
 }
 
 	.menu-hauptlinks-container,
@@ -74,6 +73,7 @@ div.page {
 
 		float: left;
 	}
+
 
 div.content {
 
@@ -222,6 +222,12 @@ div.columns div.right,
 
 			float: none;
 		}
+
+		#subnav li:nth-child(4) {
+
+			clear: left;
+		}
+
 	}
 
 	/*
