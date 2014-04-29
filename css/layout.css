@@ -188,6 +188,7 @@ div.columns div.right,
 
 			width: 295px;
 		}
+
 	}
 
 	/*
@@ -313,6 +314,11 @@ div.columns div.right,
 		#page-navigation * {
 
 			font-size: 14px;
+		}
+
+		#page-navigation #pagenumber {
+
+			visibility: hidden;
 		}
 	}
 
