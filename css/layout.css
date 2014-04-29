@@ -315,6 +315,18 @@ div.columns div.right,
 
 			visibility: hidden;
 		}
+
+		article h1 {
+
+			font-size: 180% !important;
+			line-height: 1.5 !important;
+		}
+		
+		article p,
+		article p strong {
+
+			font-size: 100% !important;
+		} 
 	}
 
 	/*
