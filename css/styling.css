@@ -639,3 +639,13 @@ body.page-id-168 article p {
 #page-navigation #prev {
 	float: left;
 }
+
+/* ! Video and audio players */
+
+.wp-video-shortcode {
+	max-width: 100%;
+}
+
+.wp-audio-shortcode {
+	max-width: 100%;
+}
