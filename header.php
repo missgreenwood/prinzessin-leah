@@ -33,8 +33,11 @@
 
 	</head>
 
-	<body <?php body_class(); ?>>
+	<!-- IE conditional fix -->
 
+	<!--[IF IE]><body class="ie" <?php body_class(); ?>><![ENDIF]-->
+	<!--[IF !IE]> --><body <?php body_class(); ?>><!-- <![ENDIF]-->
+	 
 		<div id="website" class="page">
 
 			<div id="content" class="content">
