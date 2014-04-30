@@ -1,10 +1,13 @@
 * {
+
 	margin: 0;
 	padding: 0;
 }
 
+
 body,
 html {
+
 	height: 100%;
 }
 
@@ -23,6 +26,8 @@ li {
 	list-style: none;
 }
 
+
+
 div.page {
 
 	-moz-box-sizing: border-box;
@@ -33,6 +38,19 @@ div.page {
 	padding-bottom: 150px;
 	margin-bottom: -150px;
 }
+
+/*  IE conditional fixes */
+.ie div.page {
+
+	height: 100%;
+	/* display: table; */ 
+}
+
+.ie #subnav .menu-item-232 {
+
+	visibility: hidden; 
+}
+
 
 #header {
 
@@ -53,11 +71,6 @@ div.page {
 		float: left;
 	}
 
-	#menu-hauptlinks {
-
-		/*background: blue;*/
-	}
-
 	#menu-hauptlinks li {
 
 		float: left;
@@ -74,6 +87,10 @@ div.page {
 		float: left;
 	}
 
+	.ie #menu-item {
+
+		visibility: hidden; 
+	}
 
 div.content {
 
@@ -194,7 +211,7 @@ div.columns div.right,
 	/*
 		second breakpoint < 890px (lea 200 + content 610 + 40px website margin + 40px inner margin)
 		- content single column
-		- scales with viewport
+		- scales with view#port
 	 */
 	@media only screen and (min-width: 764px) and (max-width: 940px) {
 
@@ -330,7 +347,7 @@ div.columns div.right,
 	}
 
 	/*
-		fix for iPad portrait view 
+		fix for iPad portrait view# 
 		- header subnav enforce linebreak after 3rd item   
 	*/
 
