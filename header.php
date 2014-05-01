@@ -7,14 +7,16 @@
 
 		<meta name="author" content="Lea Hampel" />
 
+		<meta name="keywords" content="Lea Hampel, Journalistin, Autorin, Recherche, Moderation, Affe im Kopf" />
+
+		<meta name="web_author" content="Judith Greif" /> 
+
 		<meta name="description" content="<?php if ( is_single() ) {
 		        single_post_title('', true); 
 		    } else {
 		        bloginfo('name'); echo " - "; bloginfo('description');
 		    }
 		    ?>" />
-
-		<meta name="keywords" content="Lea Hampel, Journalistin, Autorin, Recherche, Moderation, Affe im Kopf" />
 
 		<!-- use this to trigger media queries on apply devices -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
