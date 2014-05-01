@@ -56,6 +56,11 @@ article .category {
 	margin-bottom: 12px;
 }
 
+article .portrait p {
+
+	min-width: 100%;
+}
+
 /* uncomment to style article categories */
 
 /*
