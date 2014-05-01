@@ -6,7 +6,10 @@
 
 	// restrict post_wall (overview) images to 610px width.
 	// Height scales in ratio, images are not cropped.
-	set_post_thumbnail_size(610, 0, false);
+	if (function_exists('add_theme_support')) {
+		add_theme_support('post-thumbnails');
+		set_post_thumbnail_size(610, 0);
+	}
 
 	// add main thumbnail support for posts
 	add_theme_support( 'post-thumbnails' );
