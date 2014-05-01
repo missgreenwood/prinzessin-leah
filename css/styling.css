@@ -461,6 +461,10 @@ div.column em {
 	background: white;
 }
 
+#leahampel img {
+	max-width: 100%;
+}
+
 #leahampel .author {
 
 	display: block;
