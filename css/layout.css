@@ -43,12 +43,12 @@ div.page {
 .ie div.page {
 
 	height: 100%;
-	/* display: table; */ 
+	/* display: table; */
 }
 
 .ie #subnav .menu-item-232 {
 
-	visibility: hidden; 
+	visibility: hidden;
 }
 
 
@@ -89,7 +89,7 @@ div.page {
 
 	.ie #menu-item {
 
-		visibility: hidden; 
+		visibility: hidden;
 	}
 
 div.content {
@@ -114,7 +114,8 @@ div.content {
 	height: 100px;
 	padding: 12px 40px;
 	margin: 0;
-	max-width: 1380px;
+	/*max-width: 1380px;*/
+	max-width: 1460px;
 }
 
 #leahampel {
@@ -338,17 +339,17 @@ div.columns div.right,
 			font-size: 180% !important;
 			line-height: 1.5 !important;
 		}
-		
+
 		article p,
 		article p strong {
 
 			font-size: 100% !important;
-		} 
+		}
 	}
 
 	/*
-		fix for iPad portrait view# 
-		- header subnav enforce linebreak after 3rd item   
+		fix for iPad portrait view#
+		- header subnav enforce linebreak after 3rd item
 	*/
 
 	@media only screen and (width: 768px) {
