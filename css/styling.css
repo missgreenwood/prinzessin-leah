@@ -22,7 +22,7 @@ div p strong {
 
 
 em,
-strong, 
+strong,
 .more-link,
 #header *,
 #leahampel .author,
@@ -30,7 +30,7 @@ article h1,
 article h2,
 article h3,
 article h4,
-article b, 
+article b,
 #footer *,
 #page-navigation * {
 
@@ -52,19 +52,19 @@ article {
 article .category {
 
 	display: block;
-	text-decoration: none !important; 
-	margin-bottom: 12px; 
+	text-decoration: none !important;
+	margin-bottom: 12px;
 }
 
 /* uncomment to style article categories */
 
-/* 
+/*
 article ul {
 
-	margin: 0;  
-	padding: 0;  
-	text-align: left; 
-	list-style-type: none; 
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	list-style-type: none;
 	margin-bottom: 20px;
 	margin-top: -50px;
 }
@@ -93,16 +93,16 @@ article ul li.current-menu-item:before {
 	margin-top: 11px;
 	margin-left: 0;
 	border-radius: 1em;
-	background: #000; 
+	background: #000;
 }
 
 article ul li a {
 
 	text-decoration: none;
 	color: #000;
-	padding: .2em 1em;  
+	padding: .2em 1em;
 }
-*/ 
+*/
 
 article a {
 
@@ -215,8 +215,8 @@ article b {
 	margin-right: 24px;
 }
 
-#subnav li a,
-#subnav:before {
+/*,#subnav:before*/
+#subnav li a {
 
 	color: #000;
 	font-family: Georgia;
@@ -225,7 +225,7 @@ article b {
 	text-decoration: none;
 }
 
-#subnav:before {
+/*#subnav:before {
 
 	line-height: 23px;
 	float: left;
@@ -239,7 +239,7 @@ body.archive #subnav:before {
 body.home #subnav:before {
 
 	content: "Aktuelles:";
-}
+}*/
 
 @media only screen and (max-width: 1255px) {
 
@@ -528,18 +528,18 @@ div.column em {
 }
 
 #footer .imprint {
-	/* float: left; 
+	/* float: left;
 	margin-left:300px; */
 }
 
 #footer .content {
 
-	/* width: 65%; */  
+	/* width: 65%; */
 }
 
 #footer img {
 	margin-right: 4px;
-	margin-bottom: -5px; 
+	margin-bottom: -5px;
 }
 
 #footer .followme {
