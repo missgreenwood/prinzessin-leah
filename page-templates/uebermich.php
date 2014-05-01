@@ -13,7 +13,7 @@
             ?>
 
             
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/uebermich.png"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/uebermich.jpg"/>
             
             <div class="portrait"> <?php the_content(); ?> </div>
             
