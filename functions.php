@@ -4,6 +4,10 @@
 		WP CONFIGURATION
 	*/
 
+	// restrict post_wall (overview) images to 610px width.
+	// Height scales in ratio, images are not cropped.
+	set_post_thumbnail_size(610, 0, false);
+
 	// add main thumbnail support for posts
 	add_theme_support( 'post-thumbnails' );
 
@@ -48,7 +52,7 @@
 
 		// image
 		// check if the post has a Post Thumbnail assigned to it.
-		if ( has_post_thumbnail() ) {
+		if (has_post_thumbnail()) {
 			$markup .= get_the_post_thumbnail();
 		}
 
@@ -63,7 +67,7 @@
 
 		echo $markup;
 
-		// customize more tag	
+		// customize more tag
 		// overridden if personalized more quicktag is set manually in wp-admin backend
 
 		// 1. get post medium type
@@ -71,13 +75,13 @@
 		$terms = get_the_terms( $post->ID, 'medium' );
 
 		foreach ( $terms as $term ) {
-			global $mediatype; 
-			ob_start(); 
+			global $mediatype;
+			ob_start();
 			echo $term->slug;
 			$mediatype = ob_get_contents();
-			ob_get_clean();  
+			ob_get_clean();
 			unset($term);
-		} 
+		}
 
 		// 2. set more tag accordingly
 
@@ -85,10 +89,10 @@
 			the_content('anhören');
 		}
 		elseif ( $mediatype == 'video') {
-			the_content('ansehen'); 
+			the_content('ansehen');
 		}
 		else {
-			the_content('lesen'); 
+			the_content('lesen');
 		}
 
 		echo '</a>';
@@ -144,17 +148,17 @@
 	}
 
 
-	// Avoid links for featured images 
+	// Avoid links for featured images
 	function wpb_imagelink_setup() {
 		$image_set = get_option( 'image_default_link_type' );
-		
+
 		if ($image_set !== 'none') {
 			update_option('image_default_link_type', 'none');
 		}
 	}
 	add_action('admin_init', 'wpb_imagelink_setup', 10);
 
-	// Avoid links for post images 
+	// Avoid links for post images
 	add_filter( 'the_content', 'attachment_image_link_remove_filter' );
 
 	function attachment_image_link_remove_filter( $content ) {
