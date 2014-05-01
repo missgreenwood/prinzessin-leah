@@ -11,7 +11,7 @@
 				$posts_per_page = $wpdb->get_var("SELECT option_value FROM $wpdb->options WHERE option_name = 'posts_per_page'");
 
 				// If no category is selected, strip start-page number of items from overview
-				$post_offset = $posts_per_page * $paged;
+				$post_offset = $posts_per_page;
 				// else determine posts of current category listed on start page
 				if ($cat !== 28) {
 
