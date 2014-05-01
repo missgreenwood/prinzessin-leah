@@ -559,7 +559,7 @@ div.column em {
 	color: #f64d4d;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 500px) {
 
 	#footer span {
 		display: none;
